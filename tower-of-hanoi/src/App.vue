@@ -3,7 +3,7 @@
         <h1>Welcome to Tower of Hanoi</h1>
         <p>Move all the disks over to Tower 3</p>
         <p>Remember - you cannot place a larger disk onto a smaller disk.</p>
-        <h2>Use your arrow keys </h2>
+        <h2>Use your arrow keys(up and down, left and right) </h2>
         <div class="towers">
 
             <div v-for="(tower, key) in towers" :key="key"
@@ -134,7 +134,6 @@
                     return false
                 }
                 let array = this.towers[2];
-
 
 
                     for (let j = 0; j < array.length - 1; j++) {
